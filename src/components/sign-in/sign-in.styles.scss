@@ -1,0 +1,26 @@
+.sign-in {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 800px) {
+    width: 85%;
+    text-align: justify;
+    line-height: 30px;
+  }
+
+  .title {
+    margin: 10px 0;
+  }
+
+  .buttons {
+    display: flex;
+    // justify-content: space-between;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      margin-left: -12px;
+      padding: 0 5px;
+    }
+  }
+}

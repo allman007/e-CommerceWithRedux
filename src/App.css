@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  font-family: "Open Sans Condensed";
+  padding: 20px 60px;
+  /* display: flex; */
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: rgb(245, 244, 244);
 }
 
-.App-link {
-  color: #61dafb;
+#footer1 ::after {
+  content: "This mini project was made by Nwanji H Uche";
+  visibility: visible;
+  display: block;
+  background: #0ab9bf;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0;
+    width: auto;
+    height: auto;
   }
 }

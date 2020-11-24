@@ -1,0 +1,49 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+      color: black;
+      font-weight: 700px;
+      font-size: medium;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 70%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .option {
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding-right: 27px;
+    width: auto;
+  }
+  .logo {
+    margin-top: -13px;
+  }
+}
